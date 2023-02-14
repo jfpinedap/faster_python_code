@@ -30,7 +30,12 @@ def fix_nums_inline(nums):
     return fixed
 
 
-if __name__ == '__main__':
+def fix_nums_inline2(nums):
+    """Fix numbers with inline"""
+    return [-num if num % 2 == 0 and num < 0 else num for num in nums]
+
+
+if __name__ == "__main__":
     import random
 
     random.seed(353)
